@@ -33,5 +33,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username jahnavi-vemuri --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/jahnavi-vemuri/primes-service:latest --file Dockerfile .
-          docker push ghcr.io/jahnavi-vemuri/primes-service:latest
+          docker build -t ghcr.io/jahnavi-vemuri/prime-service:latest --file Dockerfile .
+          docker push ghcr.io/jahnavi-vemuri/prime-service:latest
