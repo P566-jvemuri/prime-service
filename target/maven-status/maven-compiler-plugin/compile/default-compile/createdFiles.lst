@@ -1,0 +1,5 @@
+edu/indiana/p566/prime_service/service/PrimeService.class
+edu/indiana/p566/prime_service/controller/HomeController.class
+edu/indiana/p566/prime_service/service/IPrimeService.class
+edu/indiana/p566/prime_service/controller/PrimesController.class
+edu/indiana/p566/prime_service/PrimeServiceApplication.class
