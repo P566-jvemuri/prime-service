@@ -10,6 +10,7 @@ edu/indiana/p566/prime_service/service/AuthenticationService.class
 edu/indiana/p566/prime_service/service/IPrimeService.class
 edu/indiana/p566/prime_service/security/SecurityConfig.class
 edu/indiana/p566/prime_service/security/Jwks.class
+edu/indiana/p566/prime_service/repository/AuthenticationDBRepository.class
 edu/indiana/p566/prime_service/security/KeyGeneratorUtils.class
 edu/indiana/p566/prime_service/model/Customer.class
 edu/indiana/p566/prime_service/controller/PrimesController.class
