@@ -23,11 +23,13 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-public class SecurityConfig {
+public class SecurityConfig implements WebMvcConfigurer {
 
     private RSAKey rsaKey;
 
@@ -51,17 +53,27 @@ public class SecurityConfig {
         return NimbusJwtDecoder.withPublicKey(rsaKey.toRSAPublicKey()).build();
     }
 
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        // Allow CORS for frontend
+        registry.addMapping("/**")
+                .allowedOrigins("http://127.0.0.1:5500")  // Frontend origin
+                .allowedMethods("GET", "POST", "PUT", "DELETE")  // Allowed HTTP methods
+                .allowedHeaders("Authorization", "Content-Type")  // Allowed headers
+                .allowCredentials(true);  // Allow credentials (cookies, headers)
+    }
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-                .cors(Customizer.withDefaults())
-                .csrf(x -> x.disable())
+                .cors(Customizer.withDefaults())  // Enable CORS support
+                .csrf(x -> x.disable())  // Disable CSRF for APIs
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.POST, "/register", "/login").permitAll()
-                        .anyRequest().authenticated()
+                        .requestMatchers(HttpMethod.POST, "/register", "/login").permitAll()  // Allow these endpoints publicly
+                        .anyRequest().authenticated()  // Require authentication for other requests
                 )
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))  // Stateless session
+                .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))  // JWT authentication
                 .build();
     }
 
@@ -73,4 +85,3 @@ public class SecurityConfig {
         return new ProviderManager(authProvider);
     }
 }
-
