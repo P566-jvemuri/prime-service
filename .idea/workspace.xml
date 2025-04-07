@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da0cc39-7db8-48ee-8bc6-2cef017bb1ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/build-image.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/kubernetes/deploy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/push-to-acr.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/push-to-ghcr.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/update-github-secrets.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/cicd_workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cicd_workflow.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/PrimeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/PrimeServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/service/PrimeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/service/PrimeServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +97,7 @@
       <workItem from="1741624166711" duration="227000" />
       <workItem from="1742938289504" duration="1049000" />
       <workItem from="1743718156503" duration="5372000" />
+      <workItem from="1744052503918" duration="828000" />
     </task>
     <servers />
   </component>
