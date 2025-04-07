@@ -46,11 +46,15 @@ jobs:
         run: |
           mvn -v
           mvn --batch-mode -DskipTests clean package
-        if: "!exists('./mvnw')"  # fallback if wrapper is missing
+        if: ${{ !steps.check_mvnw.outputs.found }}
+
+      - name: Check for Maven wrapper
+        id: check_mvnw
+        run: echo "::set-output name=found::$(test -f './mvnw' && echo 'true' || echo 'false')"
 
       - name: Build the package using Maven wrapper
         run: ./mvnw --batch-mode -DskipTests clean package
-        if: exists('./mvnw')
+        if: ${{ steps.check_mvnw.outputs.found == 'true' }}
 
       - name: Run unit tests
         run: ./mvnw --batch-mode -Dmaven.test.failure.ignore=true test
@@ -85,7 +89,6 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: ./scripts/deploy.sh
-
 
 # Alternative commented-out steps:
 

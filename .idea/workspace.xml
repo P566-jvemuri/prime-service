@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da0cc39-7db8-48ee-8bc6-2cef017bb1ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/PrimeServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/indiana/p566/prime_service/service/PrimeServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/cicd_workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cicd_workflow.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.indiana.p566.prime_service.PrimeServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.indiana.p566.prime_service.PrimeServiceApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.indiana.p566.prime_service.service.PrimeServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.indiana.p566.prime_service.service.PrimeServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.indiana.p566.prime_service.PrimeServiceApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.indiana.p566.prime_service.PrimeServiceApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.indiana.p566.prime_service.service.PrimeServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.indiana.p566.prime_service.service.PrimeServiceTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +95,7 @@
       <workItem from="1741624166711" duration="227000" />
       <workItem from="1742938289504" duration="1049000" />
       <workItem from="1743718156503" duration="5372000" />
-      <workItem from="1744052503918" duration="2477000" />
+      <workItem from="1744052503918" duration="2670000" />
     </task>
     <servers />
   </component>
