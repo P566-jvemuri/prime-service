@@ -104,7 +104,7 @@ jobs:
         image: postgres
         env:
           POSTGRES_USER: admin2025
-          POSTGRES_PASSWORD: p5662024!
+          POSTGRES_PASSWORD: p5662025!
           POSTGRES_DB: primes
         ports:
           - 5001:5432
