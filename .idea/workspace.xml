@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5da0cc39-7db8-48ee-8bc6-2cef017bb1ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/kubernetes/deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/kubernetes/deploy.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/push-to-ghcr.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/push-to-ghcr.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +119,7 @@
       <workItem from="1741624166711" duration="227000" />
       <workItem from="1742938289504" duration="1049000" />
       <workItem from="1743718156503" duration="5372000" />
-      <workItem from="1744052503918" duration="6072000" />
+      <workItem from="1744052503918" duration="6257000" />
     </task>
     <servers />
   </component>
